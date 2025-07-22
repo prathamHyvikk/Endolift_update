@@ -1,0 +1,256 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #e1616b;
+  --secondary-color: #FFE8E8;
+  --light-grey : #F7F8F9;
+  --grey-text : #8B8B8B;
+  --accordian-plus : url('../images/SVG/plus-solid.svg');
+  --accordian-minus :url('../images/SVG/minus-solid.svg')
+}
+
+.active{
+  color: var(--primary-color);
+}
+
+.nav-container {
+  padding-top: 47px;
+  padding-bottom: 60px;
+}
+.navbar {
+  border-radius: 50px;
+  background-color: white;
+  padding: 0px !important;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  line-height: 57.14px;
+  letter-spacing: 0.18px;
+  font-weight: bold;
+  margin: 24px 0 24px 49px;
+}
+
+.nav-link-fancy {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 33.56px;
+  letter-spacing: 0.1px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-fancy::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-link-fancy:hover::after {
+  width: 100%;
+}
+
+.fancy-button {
+  background-color: black;
+  color: white;
+  padding: 16.14px 26.89px;
+
+  border-radius: 73px;
+  margin: 24px 24px 24px 0;
+}
+
+.fancy-button:hover{
+  background-color: var(--primary-color);
+}
+
+.horizontal_strip {
+  width: 100px;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 60px;
+  background-color: var(--primary-color);
+}
+
+.main_heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 20px 0 18px 0;
+}
+
+
+
+
+/* FAQ */
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.accordion-item {
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 40px !important;
+   
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--secondary-color);
+   color: black ;
+ 
+}
+
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--accordian-minus);
+    background-color: white;
+    width: 51px;
+    height: 51px;
+    border-radius: 40px;
+   background-position: center;
+    
+}
+
+.accordion-button::after {
+  background-image: var(--accordian-plus);
+     background-color: white;
+     width: 51px;
+    height: 51px;
+    border-radius: 40px;
+   background-position: center;
+}
+
+
+
+.accordion-button{
+  background-color: #F7F8F9;
+
+}
+
+
+.faq_number{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  color: var(--primary-color);
+   padding: 0 20px 0 40px ;
+
+}
+.faq_section{
+  padding-bottom: 60px;
+}
+
+.accordion-button{
+   font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  color: black;
+  padding: 10px 20px !important;
+  
+}
+
+.accordion-body{
+  color: var(--grey-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 20px 40px;
+   background-color: #F7F8F9;
+}
+
+
+
+/* footer */
+
+
+.footer{
+  background-color: black;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 83px;
+}
+
+.about_endolift{
+  width: 293px;
+  margin: 24px 0 40px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing:-0.2px ;
+  color:#8B8B8B ;
+}
+
+.social_media{
+  display: flex;
+  gap: 25px;
+}
+
+
+.foot_heading{
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #8B8B8B;
+  margin-bottom: 30px;
+}
+
+.foot_pages{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  margin-bottom: 13px;
+}
+
+.stay_update{
+  width: 233px;
+  font-size: 14px;
+  font-weight: 500;
+  color:#8B8B8B ;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+  margin-bottom: 26px;
+}
+
+.email_container{
+   width: 233px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_info{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+
+ 
+}
