@@ -24,6 +24,33 @@
   color: var(--primary-color);
 }
 
+/* side nav */
+.side-nav{
+  position: absolute;
+  background-color: white;
+  right: -100%;
+  z-index: 40;
+  width: 70vw;
+  height: 100vh;
+ padding:  20px;
+
+  transition: 0.8s ease-in-out;
+}
+
+
+.nav-item{
+  list-style: none;
+ cursor: pointer;
+  padding: 15px 10px;
+}
+.nav-item:hover{
+   background-color: var(--light-grey);
+}
+.nav-link i{
+  margin: 0 15px;
+}
+
+/* Desktop Navbar */
 .nav-container {
   padding-top: 47px;
   padding-bottom: 60px;
